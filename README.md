@@ -4,7 +4,7 @@
 
 成员A GitHub用户名：6Yuting
 
-成员B GitHub用户名：待填写
+成员B GitHub用户名：L1Uhhl
 
 成员C GitHub用户名：Aya_1124124
 
