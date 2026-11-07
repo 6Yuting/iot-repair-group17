@@ -1,0 +1,15 @@
+stateDiagram-v2
+    direction LR
+    [*] --> PENDING : 创建工单（初始化赋值，非状态转换）
+
+    PENDING --> PROCESSING : 受理 / 开始处理
+    PROCESSING --> COMPLETED : 完成维修
+
+    note left of PENDING
+        新工单初始状态为 PENDING；
+        仅上述两条实线为允许的状态转换
+    end note
+    note right of COMPLETED
+        COMPLETED 为最终状态，无出边；
+        其余 7 种组合一律拒绝，含 3 种状态不变
+    end note

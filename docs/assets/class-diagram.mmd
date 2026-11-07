@@ -1,0 +1,22 @@
+classDiagram
+    direction LR
+    class Device {
+        +String deviceId
+        +String name
+        +String location
+    }
+    class WorkOrder {
+        +String orderId
+        +String deviceId
+        +Status status
+        +String reporter
+        +String createdAt
+    }
+    class Status {
+        <<enumeration>>
+        PENDING
+        PROCESSING
+        COMPLETED
+    }
+    Device "1" --> "0..*" WorkOrder : 可对应多张报修工单
+    WorkOrder ..> Status : status 取值
