@@ -2,7 +2,7 @@
 
 语言与版本：Java（openjdk 17.0.14，Zulu17.56+15-CA，Windows）
 
-测试人员GitHub用户名：Aya_1124124
+测试人员GitHub用户名：Ayaaaaaaa
 
 运行命令：
 
