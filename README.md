@@ -1,14 +1,14 @@
 # 校园物联网设备报修实验
 
-组号：17
+组号：第17组
 
 成员A GitHub用户名：6Yuting
 
 成员B GitHub用户名：L1Uhhl
 
-成员C GitHub用户名：Aya_1124124
+成员C GitHub用户名：Ayaaaaaaa
 
-本组选定语言：Java 
+本组选定语言：Java
 
 ## 范围
 只分析查看设备、提交报修、更新状态。只编程实现状态判断函数。
@@ -26,7 +26,6 @@ C完成一种语言的函数与docs/test-results.md。
 三个主要PR合并后，由A另开分支整理docs/submission.md。
 
 ## 运行
-Python：进入src/python，运行python test_status_rule.py。
 Java：进入src/java，先javac StatusRule.java StatusRuleTest.java，
 再java StatusRuleTest。
 
