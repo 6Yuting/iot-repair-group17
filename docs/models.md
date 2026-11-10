@@ -68,6 +68,7 @@ classDiagram
     class WorkOrder {
         +String orderId
         +String deviceId
+        +String description
         +Status status
         +String reporter
         +String createdAt
@@ -89,6 +90,8 @@ classDiagram
 - `WorkOrder.status` 取值来自 `Status` 枚举，与状态图的 3 个状态完全一致；每次状态变更都须先经 `canTransition` 判定。
 - `orderId` / `reporter` / `createdAt` 为识别工单、记录报修信息的最小描述，本实验不实现持久化。
 - 关系：`Device "1" --> "0..*" WorkOrder` —— **一台设备可以有 0 到多张工单，每张工单恰好对应 1 台设备**。`0` 表示设备尚未发生报修，`*` 表示同一设备可多次报修。
+
+- `WorkOrder.description` 对应 FR-02「填写故障描述」的输入，是报修工单的必要信息；异常结果里「故障描述为空则拦截提交、不生成工单」也依赖此字段，与 docs/requirements.md 保持一致。
 
 ## 与需求的一致性检查
 
