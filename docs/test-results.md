@@ -51,4 +51,7 @@ Summary: 4/4 passed
 
 从个人分支下载ZIP复测情况：已从 feat/status-c 下载 ZIP 到新目录执行，结果 4/4 passed，退出码 0
 
-从main下载ZIP最终复测情况：待填写（合并后执行，或在submission.md记录）。
+从main下载ZIP最终复测情况：已从 main 下载 ZIP 解压到新目录，
+在 src/java 下执行 javac StatusRule.java StatusRuleTest.java，
+再执行 java StatusRuleTest，T01~T04 全部 PASS，Summary: 4/4 passed，
+退出码 0，与个人分支 feat/status-c 上的结果一致。
